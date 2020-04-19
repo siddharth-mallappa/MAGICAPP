@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dashboard">
-<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/mirrorlogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/mirrorlogo"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Clock"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".mirrorsAvailable"></activity>
+        <activity android:name=".Clock" />
         <activity android:name=".Calendar" />
         <activity android:name=".CurrentWeather" />
         <activity android:name=".Compliments" />
@@ -18,7 +21,9 @@
         <activity android:name=".Notifications" />
         <activity android:name=".GeneralSetting" />
         <activity android:name=".Newsfeed" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Welcome">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
