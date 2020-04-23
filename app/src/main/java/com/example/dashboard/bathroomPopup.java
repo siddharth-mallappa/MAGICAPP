@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -37,6 +38,7 @@ public class bathroomPopup extends AppCompatDialogFragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         String password= pinview.getText().toString();
+                        Log.d("inside", "setpositive button");
                         if(button_id==1)
                             listener.bathroomPass(password);
                         else if(button_id ==2)

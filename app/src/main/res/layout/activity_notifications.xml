@@ -32,6 +32,7 @@
 
                 android:src="@drawable/bell"></ImageView>
         </RelativeLayout>
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -57,17 +58,26 @@
 
                     <Button
                         android:id="@+id/button_on"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
                         android:background="@drawable/of_to_on" />
 
                     <TextView
+                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="8dp"
                         android:text="Turn on"
                         android:textColor="#FFFFFF"
-                        android:textSize="18dp" />
+                        android:textSize="10dp" />
+                    <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Update notificaion"
+                    android:textColor="#4E4D4D"
+                    android:textSize="8dp" />
 
                 </LinearLayout>
 
@@ -75,44 +85,97 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="#242424"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+            app:cardBackgroundColor="#242424"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
 
-                <LinearLayout
-                    android:id="@+id/off"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+            <LinearLayout
+                android:id="@+id/off"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-                    <Button
-                        android:id="@+id/button_off"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:background="@drawable/on_to_off" />
+                <Button
+                    android:id="@+id/button_off"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/on_to_off" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:text="Turn off"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Turn off "
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp" />
+                <TextView
 
-                </LinearLayout>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Update notificaion"
+                    android:textColor="#4E4D4D"
+                    android:textSize="8dp" />
+
+            </LinearLayout>
 
 
 
-            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         </GridLayout>
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#242424"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:id="@+id/phonenoti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mirror your phone notifications"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+
+                <com.github.glomadrian.materialanimatedswitch.MaterialAnimatedSwitch
+                    android:id="@+id/pin"
+                    android:layout_marginLeft="52dp"
+                    android:layout_width="500dp"
+                    android:layout_height="500dp"
+                    app:base_release_color="#000000"
+                    app:base_press_color="#000000"
+                    app:ball_release_color="#000000"
+                    app:ball_press_color="#F0320C"
+                    app:icon_release="@drawable/mobile"
+                    app:icon_press="@drawable/mobileon"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
