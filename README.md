@@ -9,6 +9,6 @@ FEATURES
 -Hide/show different modules.
 -Some modules have inbuilt features, for example the in the news module you can switch between the articles.
 
-
-![](img1.JPG)
 ![](demo.gif)
+![](img1.JPG)
+
