@@ -11,4 +11,11 @@ FEATURES
 
 ![](demo.gif)
 ![](img1.JPG)
+![](demo1.png)
+![](demo2.png)
+![](demo4.png)
+![](demo6.png)
+![](demolast.jpeg)
+
+
 
